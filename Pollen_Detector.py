@@ -152,9 +152,9 @@ class App(customtkinter.CTk):
     self.lower_h_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("lower_h",value))
     self.lower_h_slider.set(0)
     self.lower_h_slider.grid(row=6, column=0, padx=20)
-    self.lower_h_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("upper_h",value))
-    self.lower_h_slider.set(255)
-    self.lower_h_slider.grid(row=7, column=0, padx=20)
+    self.upper_h_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("upper_h",value))
+    self.upper_h_slider.set(255)
+    self.upper_h_slider.grid(row=7, column=0, padx=20)
     
     # For Saturation
     self.saturation_label = customtkinter.CTkLabel(self.sidebar_frame, text="Saturation range: 0-255", font=customtkinter.CTkFont(size=12))
@@ -162,9 +162,9 @@ class App(customtkinter.CTk):
     self.lower_s_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("lower_s",value))
     self.lower_s_slider.set(0)
     self.lower_s_slider.grid(row=9, column=0, padx=20)
-    self.lower_s_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("upper_s",value))
-    self.lower_s_slider.set(255)
-    self.lower_s_slider.grid(row=10, column=0, padx=20)
+    self.upper_s_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("upper_s",value))
+    self.upper_s_slider.set(255)
+    self.upper_s_slider.grid(row=10, column=0, padx=20)
 
     # For Value
     self.value_label = customtkinter.CTkLabel(self.sidebar_frame, text="Value range: 0-255", font=customtkinter.CTkFont(size=12))
@@ -172,9 +172,9 @@ class App(customtkinter.CTk):
     self.lower_v_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("lower_v",value))
     self.lower_v_slider.set(0)
     self.lower_v_slider.grid(row=12, column=0, padx=20)
-    self.lower_v_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("upper_v",value))
-    self.lower_v_slider.set(255)
-    self.lower_v_slider.grid(row=13, column=0, padx=20)
+    self.upper_v_slider = customtkinter.CTkSlider(self.sidebar_frame, from_=0, to=255, command=lambda value:self.trackbar_set("upper_v",value))
+    self.upper_v_slider.set(255)
+    self.upper_v_slider.grid(row=13, column=0, padx=20)
 
     # For the gaussian Kernel Size
     self.gaussian_label = customtkinter.CTkLabel(self.sidebar_frame, text="Gaussian Kernel: 1", font=customtkinter.CTkFont(size=12))
@@ -220,9 +220,9 @@ class App(customtkinter.CTk):
         self.lower_h_slider.set(0)
         self.lower_s_slider.set(0)
         self.lower_v_slider.set(0)
-        self.lower_h_slider.set(255)
-        self.lower_s_slider.set(255)
-        self.lower_v_slider.set(255)
+        self.upper_h_slider.set(255)
+        self.upper_s_slider.set(255)
+        self.upper_v_slider.set(255)
         self.gaussian_slider.set(1)
         self.dilation_slider.set(1)
         self.object_number.configure(state="normal", text="")
