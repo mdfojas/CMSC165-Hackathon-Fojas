@@ -1,0 +1,15 @@
+test_image2
+130,61,0 - 255,255,255 - 1,1
+Detected pollens(Pollinated): 15
+
+test_image2
+71-61-0 - 131-255-255 - 1,1
+Detected pollens(Unpollinated): 65
+
+test_image1
+0-0-0 - 192-255-73 - 1,1
+Detected pollens(Unpollinated): 74
+
+test_image1
+0-20-0 - 103-255-115 - 3,1
+Detected pollens(Unpollinated): 54

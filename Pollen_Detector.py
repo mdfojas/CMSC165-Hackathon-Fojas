@@ -326,6 +326,10 @@ class App(customtkinter.CTk):
         global objects
         if(self.filename != ""):
             self.object_number.configure(state="enabled", text=str(len(objects)))
+        f = open("results.txt", 'w')
+        line = "Detected pollens: "+str(len(objects))
+        f.write(line)
+        f.close()
 
 
 if __name__ == "__main__":
